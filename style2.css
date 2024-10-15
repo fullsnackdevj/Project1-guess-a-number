@@ -33,7 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   margin-bottom: 3rem;
 }
 
@@ -64,7 +64,7 @@ main {
 .left {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 .left input {
@@ -126,7 +126,7 @@ h1 {
 }
 
 .message {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   height: 3rem;
 }
 
@@ -140,6 +140,7 @@ h1 {
   body {
     padding: 0;
     margin: 0;
+    scale: 0.9;
   }
 
   .guess {
