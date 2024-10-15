@@ -117,3 +117,62 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+@media only screen and (max-width: 479px) {
+  /* Styles for small devices */
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .guess {
+    text-align: center;
+  }
+
+  .between {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .top-header {
+    margin-top: 1rem;
+  }
+  .again {
+    position: relative;
+    top: 5rem;
+    left: 7.5rem;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    scale: 0.9;
+    text-align: center;
+  }
+
+  .left input {
+    margin-top: 3rem;
+  }
+}
+
+/* Mobile (up to 767px) */
+
+@media only screen and (max-width: 767px) {
+}
+
+/* Tablet (768px to 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablet devices */
+}
+
+/* Desktop (1025px and up) */
+@media only screen and (min-width: 1025px) {
+  /* Styles for desktop devices */
+}
