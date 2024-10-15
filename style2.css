@@ -189,7 +189,8 @@ h1 {
     min-width: 320px;
   }
 
-  .left input {
+  .left {
+    margin-top: 3rem;
   }
 }
 
