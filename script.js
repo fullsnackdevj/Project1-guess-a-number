@@ -67,6 +67,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
     document.querySelector('.number').textContent = secretNumber;
+    document.querySelector('.topLabel').textContent = 'You guessed it right!';
 
     // setting up new highScore
     if (score > highscore) {
@@ -84,6 +85,11 @@ document.querySelector('.check').addEventListener('click', function () {
       displayMsg('📈 Game Over, You Lose!');
       score--;
       document.querySelector('.score').textContent = 0;
+
+      document.querySelector('.topLabel').textContent = 'You guessed it wrong!';
+      document.querySelector('.number').textContent = secretNumber;
+      document.querySelector('body').style.backgroundColor = 'red';
+      document.querySelector('.number').style.width = '30rem';
     }
   }
 });
@@ -100,4 +106,5 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').textContent = '?';
   document.querySelector('.guess').value = '';
   document.querySelector('.score').textContent = score;
+  document.querySelector('.topLabel').textContent = 'Guess My Number!';
 });
